@@ -44,8 +44,7 @@ $(document).ready(function () {
                                         console.log(parsed_json);
                                         var image = parsed_json['data']['image_original_url'];
                                         console.log(image);
-                                        $("#image").src=image;
-                                        console.log($("#image").src);
+                                        $("#image").attr('src',image);
                                     }
                                 });
 
