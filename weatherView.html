@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script
+          src="http://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+                jQuery.getJSON( url [, data ] [, success ] )
+        </script>
+        <script src="weatherView.js"></script>
+        <style>
+            body
+            {
+                margin: 20px;
+                border-width: thin;
+                border-style: ridge;
+                padding: 10px;
+            }
+            .weather-container
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .weather-item
+            {
+                margin: 10px;
+                flex-direction: column;
+            }
+            #quote
+            {
+                margin: 10px;
+                padding: 5px;
+            }
+            #wOutput
+            {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <article id="quote">
+            <h4 id="quote-title"></h4>
+            <p id="quote-content"></p>
+            <h6 id="quote-source"></h6>
+        </article>
+        
+        <div class="weather-container">
+            <form id="wInput" class="weather-item">
+                <label for="state">State: </label>
+                <input type="text" id="state" value="UT"> <br>
+                <label for="city">City:  </label>
+                <input type="text" id="city" value="Provo"> <br>
+                <button type="button" id="weatherButton">Get the Weather</button>
+            </form>
+
+            <div id="wOutput" class="weather-item">
+                <h1 id="displayCity"></h1>
+                <p id="weather">weather will display here</p>
+            </div>
+            
+            <div id="wImage" class="weather-item">
+                <p>via GIPHY
+                    <a href="https://giphy.com">
+                        <img id="image" src="https://media.giphy.com/media/PLJzdMVafDLTW/giphy.gif" alt="giphy image" style="width:300px;height:auto;border:1;">
+                    </a>
+                </p>
+            </div>
+        </div>
+     
+     
+    </body>
+</html>
