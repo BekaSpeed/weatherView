@@ -4,22 +4,35 @@ body
 	border-width: thin;
 	border-style: ridge;
 	padding: 10px;
+	background-color: cadetblue;
 }
 .weather-container
 {
+	height: 350px;
+	margin: 10px;
+	padding: 15px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+	background-color: beige;
 }
 .weather-item
 {
 	margin: 10px;
+	padding 30px;
 	flex-direction: column;
+	line-height: 1.8;
 }
 #quote
 {
-	margin: 10px;
-	padding: 5px;
+	text-emphasis-style: circle;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Georgia, Serif;
+	padding: 15px;
+	background-color: beige;
+	line-height: 1;
 }
 #wOutput
 {
