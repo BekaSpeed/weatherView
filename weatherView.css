@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  	    body
             {
                 margin: 20px;
@@ -38,3 +39,33 @@
             {
                 width: 200px;
             }
+=======
+body
+{
+	margin: 20px;
+	border-width: thin;
+	border-style: ridge;
+	padding: 10px;
+}
+.weather-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.weather-item
+{
+	margin: 10px;
+	flex-direction: column;
+}
+#quote
+{
+	margin: 10px;
+	padding: 5px;
+}
+#wOutput
+{
+	width: 200px;
+}
+
+>>>>>>> 84be0051ace2f122baaa42f2490f2dc1bd0cbcee
