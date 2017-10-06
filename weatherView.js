@@ -31,8 +31,9 @@ $(document).ready(function () {
                           everything += "<li>Local Time: "+local_time;
                           everything += "</ul>";
                           $("#weather").html(everything);
-                          var key_word = "";
+                          var key_word = "funny+news+";
                           key_word += (current_weather.replace(" ","+")+"+weather");
+                          key_word = key_word.replace("Clear","Sunny");
                           console.log(key_word);
 
                            $.ajax(

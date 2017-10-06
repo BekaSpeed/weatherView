@@ -8,39 +8,11 @@
                 jQuery.getJSON( url [, data ] [, success ] )
         </script>
         <script src="weatherView.js"></script>
-        <style>
-            body
-            {
-                margin: 20px;
-                border-width: thin;
-                border-style: ridge;
-                padding: 10px;
-            }
-            .weather-container
-            {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-            .weather-item
-            {
-                margin: 10px;
-                flex-direction: column;
-            }
-            #quote
-            {
-                margin: 10px;
-                padding: 5px;
-            }
-            #wOutput
-            {
-                width: 200px;
-            }
-        </style>
+        <link rel="stylesheet" href="weatherView.css">
     </head>
     <body>
         
-        <article id="quote">
+        <article id="quote" class="weather-item">
             <h4 id="quote-title"></h4>
             <p id="quote-content"></p>
             <h6 id="quote-source"></h6>
@@ -50,7 +22,7 @@
             <form id="wInput" class="weather-item">
                 <label for="state">State: </label>
                 <input type="text" id="state" value="UT"> <br>
-                <label for="city">City:  </label>
+                <label for="city">City :  </label>
                 <input type="text" id="city" value="Provo"> <br>
                 <button type="button" id="weatherButton">Get the Weather</button>
             </form>
@@ -63,7 +35,7 @@
             <div id="wImage" class="weather-item">
                 <p>via GIPHY
                     <a href="https://giphy.com">
-                        <img id="image" src="https://media.giphy.com/media/PLJzdMVafDLTW/giphy.gif" alt="giphy image" style="width:300px;height:auto;border:1;">
+                        <img id="image" src="https://media.giphy.com/media/PLJzdMVafDLTW/giphy.gif" alt="giphy image" style="width:auto;height:300px;border:1;">
                     </a>
                 </p>
             </div>
